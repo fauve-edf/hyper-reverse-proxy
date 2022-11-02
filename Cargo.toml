@@ -23,13 +23,13 @@ name="internal"
 harness = false
 
 [dependencies]
-hyper = { git = "https://github.com/hyperium/hyper", rev = "bc9ad46247358c5f39c47719a9247e0eab8f3ded", features = ["full"] }
+hyper = { git = "https://github.com/hyperium/hyper", branch = "0.14.x", features = ["full"] }
 lazy_static = "1.4.0"
 tokio = { version = "1.17.0", features = ["io-util", "rt"] }
 tracing = "0.1.34"
 
 [dev-dependencies]
-hyper = { git = "https://github.com/hyperium/hyper", rev = "bc9ad46247358c5f39c47719a9247e0eab8f3ded", features = ["full"] }
+hyper = { git = "https://github.com/hyperium/hyper", branch = "0.14.x", features = ["full"] }
 futures = "0.3.21"
 async-trait = "0.1.53"
 async-tungstenite = { version = "0.17", features = ["tokio-runtime"] }
